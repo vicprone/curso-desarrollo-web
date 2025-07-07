@@ -1,0 +1,15 @@
+/* Footer Estilos */
+footer {
+    background-color: $lila;
+    margin-top: 2rem;
+    height: 10rem;
+    display: flex;
+    @include flexBasico(column,center);
+
+    img {
+     width: 3rem;
+     height: 3rem;
+     object-fit: cover;    
+    }
+}
+

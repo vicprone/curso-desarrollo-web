@@ -1,0 +1,6 @@
+/* Mixins */
+
+@mixin flexBasico($directionValor, $justifyValor){
+    flex-direction:$directionValor;
+    justify-content:$justifyValor;
+}

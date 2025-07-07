@@ -1,0 +1,29 @@
+/* Estilos Generales */
+
+@import "./utilities/mixins";
+@import "./utilities/variables";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./layout/form";
+
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $negro;
+}
+
+/* Navbar */
+nav.navbar {
+    z-index: 10;
+}
+
+

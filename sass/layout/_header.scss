@@ -1,0 +1,99 @@
+/* Header Estilos */
+@use '../utilities/variables';
+
+.logotipo-imagen {
+    width: 5rem;
+}
+
+.index-background {
+    background-image: url(../img/index-header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 5rem; 
+}
+
+.oscurecer-fondo {
+    position: absolute;
+    inset: 0;
+    background-color: variables.$oscuro-background;
+    display: flex;
+    z-index: 1;
+    @include flexBasico(column, space-between);
+}
+
+.index-header-inferior {
+    width: 100%;
+    max-width: 600px;
+    margin: 7rem auto;
+    padding: 5rem;
+    z-index: 2;
+}
+
+.index-header-btn {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.5s;
+    background-color: $lila;
+
+    &:hover{
+    background-color: $blanco;
+    color: $lila;
+    }
+}
+
+/* Header páginas interiores */
+.historia-background {
+    @extend .index-background;
+    background-image: url(../img/img-historia.jpg);
+}
+
+.sumate-background {
+    @extend .index-background;
+    background-image: url(../img/sumate-img2.jpg);
+}
+
+.rescatados-background {
+    background-color: $lilabackground;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    @include flexBasico(column,center);
+}
+
+.rescatados-header-inferior {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.texto-rescatados {
+    color: $violeta;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .texto-rescatados {
+        font-size: 1.2rem;
+    }
+
+    .index-header-inferior,
+    .rescatados-header-inferior {
+        padding: 1rem;
+    }
+
+    .logotipo-imagen {
+        width: 4rem;
+    }
+
+    .index-header-btn {
+        width: 100%;
+    }
+}

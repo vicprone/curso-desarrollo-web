@@ -1,0 +1,57 @@
+/* Formulario Sumate */
+.sumate-subtitulo {
+    font-weight: bold;
+    font-size: larger;
+    color: $lila;
+}
+
+.sumate-formulario {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: $blanco;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $negro;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sumate-formulario h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sumate-formulario label {
+    font-weight: bold;
+}
+
+.sumate-formulario input,
+.sumate-formulario select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid $offwhite;
+    border-radius: 5px;
+}
+
+.sumate-formulario button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: $lila;
+    color: $blanco;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover{
+    background-color: $lilahover;
+    }
+}
+
+
+.cierre {
+    text-align: center;
+    margin-top: 2rem;
+    color: $lila;
+}

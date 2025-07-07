@@ -1,249 +1,234 @@
+@charset "UTF-8";
 /* Estilos Generales */
-* {
-    font-family: "Poppins", sans-serif;
-}
-ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-/* Navbar */
-nav.navbar {
-    z-index: 10;
-}
-
+/* Mixins */
 /* Header Estilos */
 .logotipo-imagen {
-    width: 5rem;
+  width: 5rem;
 }
 
-.index-background {
-    background-image: url(../img/index-header-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    padding-top: 5rem; 
+.index-background, .sumate-background, .historia-background {
+  background-image: url(../img/index-header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 5rem;
 }
 
 .oscurecer-fondo {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.452);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4509803922);
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .index-header-inferior {
-    width: 100%;
-    max-width: 600px;
-    margin: 7rem auto;
-    padding: 5rem;
-    z-index: 2;
+  width: 100%;
+  max-width: 600px;
+  margin: 7rem auto;
+  padding: 5rem;
+  z-index: 2;
 }
 
 .index-header-btn {
-    border-radius: 0.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    border: none;
-    transition: all 0.5s;
-    background-color: rgb(201, 149, 198);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.5s;
+  background-color: #c995c6;
 }
-
 .index-header-btn:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(201, 149, 198);
+  background-color: #fff;
+  color: #c995c6;
 }
 
 /* Header páginas interiores */
 .historia-background {
-    background-image: url(../img/img-historia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    padding-top: 5rem;
+  background-image: url(../img/img-historia.jpg);
 }
 
 .sumate-background {
-    background-image: url(../img/sumate-img2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    padding-top: 5rem;
+  background-image: url(../img/sumate-img2.jpg);
 }
 
 .rescatados-background {
-    background-color: rgb(233, 195, 231);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: #e9c3e7;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .rescatados-header-inferior {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .texto-rescatados {
-    color: rgb(117, 77, 115);
-    font-size: 1.8rem;
+  color: #754d73;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 768px) {
-    .texto-rescatados {
-        font-size: 1.2rem;
-    }
-
-    .index-header-inferior,
-    .rescatados-header-inferior {
-        padding: 1rem;
-    }
-
-    .logotipo-imagen {
-        width: 4rem;
-    }
-
-    .index-header-btn {
-        width: 100%;
-    }
+  .texto-rescatados {
+    font-size: 1.2rem;
+  }
+  .index-header-inferior,
+  .rescatados-header-inferior {
+    padding: 1rem;
+  }
+  .logotipo-imagen {
+    width: 4rem;
+  }
+  .index-header-btn {
+    width: 100%;
+  }
 }
-
 /* Main Estilos */
-
 .cards-secciones-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    row-gap: 4rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  row-gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .card-seccion-imagen {
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-seccion {
-    width: 25rem;
-    border: 1px solid rgba(201, 149, 198);
+  width: 25rem;
+  border: 1px solid #c995c6;
 }
 
 .card-seccion-titulo {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .card-seccion-btn {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    background-color: rgb(201, 149, 198);
-    color: white;
-    padding: 0.5rem;
-    width: 100%;
-    cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: #c995c6;
+  color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
 }
-
 .card-seccion-btn:hover {
-    background-color: rgb(117, 77, 115);
+  background-color: #754d73;
 }
 
 .texto-adopcion {
-    color: rgb(117, 77, 115);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-align: center;
-}
-
-/* Formulario Sumate */
-.sumate-subtitulo {
-    font-weight: bold;
-    font-size: larger;
-    color: rgb(201, 149, 198);
-}
-
-.sumate-formulario {
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.sumate-formulario h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.sumate-formulario label {
-    font-weight: bold;
-}
-
-.sumate-formulario input,
-.sumate-formulario select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.sumate-formulario button {
-    padding: 0.75rem;
-    font-size: 1rem;
-    background-color: rgb(201, 149, 198);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.sumate-formulario button:hover {
-    background-color: rgb(236, 214, 235);
-}
-
-.cierre {
-    text-align: center;
-    margin-top: 2rem;
-    color: rgb(201, 149, 198);
+  color: #754d73;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
 }
 
 /* Footer Estilos */
 footer {
-    background-color: rgb(201, 149, 198);
-    margin-top: 2rem;
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: #c995c6;
+  margin-top: 2rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
 }
 
-footer img {
-    width: 3rem;
-    height: 3rem;
-    object-fit: cover;
+/* Formulario Sumate */
+.sumate-subtitulo {
+  font-weight: bold;
+  font-size: larger;
+  color: #c995c6;
 }
+
+.sumate-formulario {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sumate-formulario h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sumate-formulario label {
+  font-weight: bold;
+}
+
+.sumate-formulario input,
+.sumate-formulario select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sumate-formulario button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #c995c6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.sumate-formulario button:hover {
+  background-color: #c995c6;
+}
+
+.cierre {
+  text-align: center;
+  margin-top: 2rem;
+  color: #c995c6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navbar */
+nav.navbar {
+  z-index: 10;
+}
+
+/*# sourceMappingURL=styleok.css.map */
