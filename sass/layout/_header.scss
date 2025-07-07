@@ -58,12 +58,25 @@
 }
 
 .rescatados-background {
+    background: linear-gradient(90deg, $lilabackground, $violeta);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+    /*codigo sin la animacion 
     background-color: $lilabackground;
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
-    @include flexBasico(column,center);
+    @include flexBasico(column,center);*/
 }
 
 .rescatados-header-inferior {
@@ -75,7 +88,7 @@
 }
 
 .texto-rescatados {
-    color: $violeta;
+    color: $blanco;
     font-size: 1.8rem;
 }
 

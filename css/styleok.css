@@ -57,15 +57,26 @@
 }
 
 .rescatados-background {
-  background-color: #e9c3e7;
+  background: linear-gradient(90deg, #e9c3e7, #754d73);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+  /*codigo sin la animacion 
+  background-color: $lilabackground;
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flexBasico(column,center);*/
 }
-
 .rescatados-header-inferior {
   width: 100%;
   max-width: 800px;
@@ -75,7 +86,7 @@
 }
 
 .texto-rescatados {
-  color: #754d73;
+  color: #fff;
   font-size: 1.8rem;
 }
 
