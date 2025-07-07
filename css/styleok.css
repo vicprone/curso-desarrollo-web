@@ -112,10 +112,14 @@
 .card-seccion {
   width: 25rem;
   border: 1px solid #c995c6;
+  transition: transform 0.3s ease;
+}
+.card-seccion:hover {
+  transform: scale(1.05);
 }
 
 .card-seccion-titulo {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card-seccion-btn {

@@ -18,7 +18,7 @@
 .oscurecer-fondo {
     position: absolute;
     inset: 0;
-    background-color: variables.$oscuro-background;
+    background-color: $oscuro-background;
     display: flex;
     z-index: 1;
     @include flexBasico(column, space-between);
