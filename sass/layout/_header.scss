@@ -5,15 +5,16 @@
     width: 5rem;
 }
 
-.index-background {
-    background-image: url(../img/index-header-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    padding-top: 5rem; 
+.historia-background {
+    @extend .index-background;
+    background-image: url(../img/img-historia.jpg);
 }
+
+.sumate-background {
+    @extend .index-background;
+    background-image: url(../img/sumate-img2.jpg);
+}
+
 
 .oscurecer-fondo {
     position: absolute;
@@ -47,15 +48,6 @@
 }
 
 /* Header páginas interiores */
-.historia-background {
-    @extend .index-background;
-    background-image: url(../img/img-historia.jpg);
-}
-
-.sumate-background {
-    @extend .index-background;
-    background-image: url(../img/sumate-img2.jpg);
-}
 
 .rescatados-background {
     background: linear-gradient(90deg, $lilabackground, $violeta);

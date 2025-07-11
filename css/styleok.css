@@ -1,11 +1,6 @@
 @charset "UTF-8";
 /* Estilos Generales */
 /* Mixins */
-/* Header Estilos */
-.logotipo-imagen {
-  width: 5rem;
-}
-
 .index-background, .sumate-background, .historia-background {
   background-image: url(../img/index-header-background.jpg);
   background-repeat: no-repeat;
@@ -14,6 +9,19 @@
   position: relative;
   min-height: 100vh;
   padding-top: 5rem;
+}
+
+/* Header Estilos */
+.logotipo-imagen {
+  width: 5rem;
+}
+
+.historia-background {
+  background-image: url(../img/img-historia.jpg);
+}
+
+.sumate-background {
+  background-image: url(../img/sumate-img2.jpg);
 }
 
 .oscurecer-fondo {
@@ -48,14 +56,6 @@
 }
 
 /* Header páginas interiores */
-.historia-background {
-  background-image: url(../img/img-historia.jpg);
-}
-
-.sumate-background {
-  background-image: url(../img/sumate-img2.jpg);
-}
-
 .rescatados-background {
   background: linear-gradient(90deg, #e9c3e7, #754d73);
   background-size: 200% 200%;
