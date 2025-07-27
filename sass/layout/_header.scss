@@ -47,6 +47,12 @@
     }
 }
 
+.nav-link.active {
+  color: $violeta !important;
+  font-weight: bold;
+  border-bottom: 2px solid $violeta; 
+}
+
 /* Header páginas interiores */
 
 .rescatados-background {
@@ -74,6 +80,7 @@
 .rescatados-header-inferior {
     width: 100%;
     max-width: 800px;
+    padding-top: 120px !important;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
